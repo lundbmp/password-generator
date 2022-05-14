@@ -6,9 +6,18 @@ generatePassword() will be a function with a return type of string.
     string will be converted from unicode to the desired character and appended to a string
     string will be returned
 
+  when generatePassword() is called, we need to pompt user with input
+
 need a randomNumber function with min and max perameters.
 */
 
+function generatePassword() {
+
+}
+
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * max) + min;
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
