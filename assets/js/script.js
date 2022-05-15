@@ -12,7 +12,31 @@ need a randomNumber function with min and max perameters.
 */
 
 function generatePassword() {
+  let userInputs = {
+    promptInputCharLength : function() {
+      let charLenghtInput = prompt("What length password would you like? (8-128 characters long)");
+      charLenghtInput = parseInt(charLenghtInput);
 
+      if(charLenghtInput >= 8 && charLenghtInput <= 128) {
+        userInputs.characterLength = charLenghtInput;
+      } else {
+        alert("this is not a proper input. Try again.");
+        throw new Error('This is not a proper input. Try again.');
+      }
+
+      userInputs.lowerCase = confirm("Would you like lowcase letters in your password?");
+      userInputs.upperCase = confirm("Would you like upper case letters in your password?");
+      userInputs.numbers = confirm("Would you like numbers in your password?");
+      userInputs.specialCharacters = confirm("would you like special characters in your password? ");
+    }
+  }
+
+  userInputs.promptInputCharLength();
+  console.log(userInputs.characterLength);
+  console.log(userInputs.lowerCase);
+  console.log(userInputs.upperCase);
+  console.log(userInputs.numbers);
+  console.log(userInputs.specialCharacters);
 }
 
 function randomNumber(min, max) {
