@@ -31,12 +31,7 @@ function generatePassword() {
     }
   }
 
-  userInputs.promptInputCharLength();
-  console.log(userInputs.characterLength);
-  console.log(userInputs.lowerCase);
-  console.log(userInputs.upperCase);
-  console.log(userInputs.numbers);
-  console.log(userInputs.specialCharacters);
+  
 }
 
 function randomNumber(min, max) {
