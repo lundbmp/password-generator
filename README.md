@@ -27,6 +27,8 @@ You will be asked:
 
 After selecting your criteria for your password, if everything you entered is correct, will generate a password displayed on the screen.
 
+![password-generator-screenshot](https://user-images.githubusercontent.com/35671768/169660832-f0d214d3-dd3b-4680-8313-7064a9342064.png)
+
 ## How to Contribute
 If you want to add and more character sets, add the appropriate array to the top of the page with the other arrays and add a prompt with the other prompts.
 If you wish to remove character sets, comment out the appropriate prompt.
